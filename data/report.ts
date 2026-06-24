@@ -101,6 +101,15 @@ export const report: Report = {
   trends: [
     {
       rank: 1,
+      title: "commercetools for Builders: enterprise commerce in days, not months",
+      body: "commercetools launched \"commercetools for Builders\" — an AI-powered build experience that turns natural-language intent into production-ready commerce (catalog, checkout, storefront). It ships a Skills Library installable directly in Claude Code, Cursor and other AI tools, plus step-by-step guides and zero-config setup (no credential wrangling). Aimed at everyone shipping commerce — founders, PMs, designers and engineers, whether new to commercetools or already on it — it compresses what used to take a large team and months into days, on the same Sphere foundation that powers $100B+ GMV across 600+ enterprises.",
+      flags: [
+        { kind: "ai", label: "AI relevance" },
+        { kind: "ent", label: "Enterprise relevance" },
+      ],
+    },
+    {
+      rank: 2,
       title: "Autonomous Commerce becomes a category — and Sphere is the platform",
       body: "The dominant signal of the window. On June 9 (Boston), commercetools declared \"Autonomous Commerce\" the next era — AI systems that sense, decide and act in real time across pricing, inventory, promotions and fulfillment — and unveiled commercetools Sphere, an AI-native platform pairing a headless foundation with agent governance (identity, scope, human approval). Sphere already powers $100B+ in annualized GMV at under 60ms. MosAIc, a multi-agent ops tool, previewed at Shoptalk Europe.",
       flags: [
@@ -109,7 +118,7 @@ export const report: Report = {
       ],
     },
     {
-      rank: 2,
+      rank: 3,
       title: "Agentic shopping channels: AgenticLift + AI Hub",
       body: "AgenticLift (Q1) gives brands on other platforms a fully managed AI commerce layer — connecting catalog, pricing and transactions to consumer AI channels without replatforming. AI Hub now supports UCP product feeds and checkout inside Google's Gemini, and commercetools backs Stripe's Agentic Commerce Suite. The Agent Gateway exposes commerce to AI agents safely.",
       flags: [
@@ -118,7 +127,7 @@ export const report: Report = {
       ],
     },
     {
-      rank: 3,
+      rank: 4,
       title: "AI-assisted data modeling shortens replatforming",
       body: "Smart Data Modeler uses GenAI to ingest CSV/JSON/XLSX and instantly propose a product data model with human-in-the-loop review — directly easing migrations off rigid platforms like SAP, Adobe and Salesforce. Paired with a 100MB / 500,000-row Import API and a new \"partially imported\" status, it makes catalog onboarding materially faster.",
       flags: [
@@ -128,7 +137,7 @@ export const report: Report = {
       ],
     },
     {
-      rank: 4,
+      rank: 5,
       title: "Checkout turns into a conversion engine",
       body: "A heavy quarter for Checkout: Express Payments (one-click PayPal / Google Pay / Apple Pay), Drop-in payment UI (GA), Payment predicates, the Payment Intents API (GA), and Applications / Payment Integrations APIs to configure checkout without manual Merchant Center setup.",
       flags: [
@@ -136,7 +145,7 @@ export const report: Report = {
       ],
     },
     {
-      rank: 5,
+      rank: 6,
       title: "Multi-cloud: Connect & Checkout land on AWS",
       body: "commercetools Connect now runs inside a customer's existing AWS environment with full feature parity (previously Google Cloud only), and Checkout plus PSP connectors are supported on AWS natively — reducing architectural complexity and latency for enterprises standardized on AWS.",
       flags: [
@@ -144,7 +153,7 @@ export const report: Report = {
       ],
     },
     {
-      rank: 6,
+      rank: 7,
       title: "Real-time inventory & cart accuracy at scale",
       body: "Inventory Reservations (the new \"Reserve On Cart\" mode) hold stock from add-to-cart through checkout — built for fast-selling items at thousands of reservations a minute. Cart Freeze Strategies lock displayed price/discounts, Cart Locking lets support agents edit safely, and carts can now carry a Purchase Order number from the start.",
       flags: [
@@ -153,6 +162,7 @@ export const report: Report = {
     },
   ],
   releases: [
+    { product: "commercetools for Builders", date: "Jun 2026", highlight: "\"Stand up enterprise commerce in days, not months.\" An AI-powered build experience that turns natural-language intent into production-ready storefronts (catalog, checkout, storefront). Ships a Skills Library installable in Claude Code, Cursor and other AI tools, with step-by-step guides and zero-config setup — for founders, PMs, designers and engineers, new or existing customers.", source: "commercetools.com/commercetools-for-builders", type: "New product" },
     { product: "commercetools Sphere", date: "Jun 9, 2026", highlight: "Autonomous Commerce category launch and commercetools Sphere — an AI-native platform uniting a headless foundation with agent governance (identity, scope, human approval). MosAIc multi-agent ops tool previewed at Shoptalk Europe (Stall M30).", source: "commercetools.com/press-releases", type: "Launch" },
     { product: "Product Search", date: "May 26, 2026", highlight: "Several Product Search fields are now generally available, expanding queryable product data for storefront and agent-driven discovery.", source: "docs.commercetools.com/api/releases", type: "GA release" },
     { product: "commercetools Connect", date: "Mar 23, 2026", highlight: "Connect is now available in AWS regions — deploy and run Connect applications inside your existing AWS environment with full feature parity.", source: "docs.commercetools.com/connect/releases", type: "Enhancement" },

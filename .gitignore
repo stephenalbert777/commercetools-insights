@@ -30,3 +30,6 @@ next-env.d.ts
 # vercel
 .vercel
 /.vs
+
+# large media — host videos externally, never commit to git (GitHub 100 MB limit)
+/public/videos/*.mp4

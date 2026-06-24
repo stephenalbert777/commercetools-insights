@@ -22,31 +22,52 @@ function AcceleratorBlock({ a }: { a: Accelerator }) {
     >
       {/* Header band */}
       <div className="border-b border-opti-line bg-gradient-to-r from-[#f1eefc] to-white p-6 sm:p-7">
-        <div className="flex items-start gap-4">
-          <div className="flex h-12 w-12 flex-none items-center justify-center rounded-xl bg-opti-accent text-lg font-extrabold text-white">
-            {a.n}
-          </div>
-          <div className="flex-1">
-            <div className="flex flex-wrap items-center gap-2">
-              <span className={LABEL}>{a.category}</span>
-              <span className="rounded-full border border-opti-line bg-opti-chip px-2.5 py-0.5 text-[11px] font-semibold uppercase tracking-wide text-opti-teal">
-                {a.maturity}
-              </span>
+        <div className="flex flex-col gap-6 lg:flex-row lg:items-start">
+          <div className="min-w-0 flex-1">
+            <div className="flex items-start gap-4">
+              <div className="flex h-12 w-12 flex-none items-center justify-center rounded-xl bg-opti-accent text-lg font-extrabold text-white">
+                {a.n}
+              </div>
+              <div className="flex-1">
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className={LABEL}>{a.category}</span>
+                  <span className="rounded-full border border-opti-line bg-opti-chip px-2.5 py-0.5 text-[11px] font-semibold uppercase tracking-wide text-opti-teal">
+                    {a.maturity}
+                  </span>
+                </div>
+                <h2 className="mt-1.5 text-[22px] font-bold leading-tight text-opti-ink">
+                  {a.name}
+                </h2>
+                <p className="mt-1 text-[15px] font-medium text-rc-accent">
+                  {a.tagline}
+                </p>
+              </div>
             </div>
-            <h2 className="mt-1.5 text-[22px] font-bold leading-tight text-opti-ink">
-              {a.name}
-            </h2>
-            <p className="mt-1 text-[15px] font-medium text-rc-accent">
-              {a.tagline}
+            <p className="mt-4 max-w-3xl text-[14px] leading-relaxed text-opti-muted">
+              {a.overview}
             </p>
+            <div className="mt-4 inline-flex items-center gap-2 rounded-lg border border-opti-line bg-white px-3 py-2 text-[13px]">
+              <span className="font-semibold text-opti-teal">Customer value</span>
+              <span className="text-opti-ink">{a.customerValue}</span>
+            </div>
           </div>
-        </div>
-        <p className="mt-4 max-w-3xl text-[14px] leading-relaxed text-opti-muted">
-          {a.overview}
-        </p>
-        <div className="mt-4 inline-flex items-center gap-2 rounded-lg border border-opti-line bg-white px-3 py-2 text-[13px]">
-          <span className="font-semibold text-opti-teal">Customer value</span>
-          <span className="text-opti-ink">{a.customerValue}</span>
+
+          {a.video && (
+            <div className="w-full lg:w-[380px] lg:flex-none">
+              <div className="aspect-video w-full overflow-hidden rounded-xl border border-opti-line bg-black shadow-sm">
+                <iframe
+                  src={a.video}
+                  title={`${a.name} — video`}
+                  className="h-full w-full"
+                  allow="encrypted-media; fullscreen;"
+                  allowFullScreen
+                />
+              </div>
+              <p className="mt-1.5 text-center text-[11px] font-semibold uppercase tracking-wide text-opti-teal">
+                {a.name} — see it in action
+              </p>
+            </div>
+          )}
         </div>
       </div>
 

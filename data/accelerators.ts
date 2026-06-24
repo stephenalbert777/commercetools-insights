@@ -25,6 +25,7 @@ export interface Accelerator {
   category: string;     // "B2B Commerce · Conversational AI"
   tagline: string;      // one-line positioning
   maturity: string;     // "Live pilot" | "In production" | "Production-ready"
+  video?: string;       // optional showcase video — embed URL (e.g. HeyGen) rendered in an iframe
   customerValue: string;// headline customer outcome
   overview: string;     // longer description
   benefits: AccelBenefit[];
@@ -61,6 +62,7 @@ export const accelerators: AcceleratorsData = {
       category: "Customer Service · AI Agents · Multi-Tenant SaaS",
       tagline: "AI-assisted B2C & B2B service desks, live per client in days",
       maturity: "Production-ready",
+      video: "https://app.heygen.com/embeds/2633de80446b435ebc7a820ad3dea918",
       customerValue: "More cases resolved per agent, with each client's desk live in days.",
       overview:
         "A multi-tenant SaaS Customer Service Accelerator that runs AI-assisted B2C and B2B service desks for many client organisations from one platform. New clients are onboarded from a superadmin control plane that registers their commercetools projects and bootstraps their admins, so a fully isolated, branded service desk goes live in days instead of a multi-month build. Each tenant connects to its own commercetools project with encrypted credentials and signs in through its existing identity provider, while a single codebase serves both consumer and business support — turning customer service from a slow, costly build into a fast-to-deploy, AI-driven way to protect revenue and loyalty.",
