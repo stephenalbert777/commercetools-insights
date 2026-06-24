@@ -84,9 +84,9 @@ export const weeklyPlan: WeeklyPlan = {
         { team: "All Teams", text: "Lock owners, cadence and goals for the 6-week AI Commerce enablement program." },
       ],
       tasks: [
-        { day: "Mon", date: "Jun 22", activity: "Kick-off: AI Commerce enablement program — assign owners, cadence & goals", team: "Practice Head", type: "Internal Milestone", kpi: "Owners assigned / plan locked", owner: "Stephen", department: "Practice", status: "todo" },
-        { day: "Tue", date: "Jun 23", activity: "Review commercetools Autonomous Commerce (MosAIc) reference architecture", team: "Practice", type: "Internal Milestone", kpi: "Architecture reviewed", owner: "Stephen", department: "Practice", status: "todo" },
-        { day: "Wed", date: "Jun 24", activity: "Draft Royal Cyber Autonomous Commerce implementation blueprint", team: "Senior Architect", type: "Whitepaper", kpi: "Reference architecture drafted", owner: "Stephen", department: "Practice", status: "todo" },
+        { day: "Mon", date: "Jun 22", activity: "Kick-off: AI Commerce enablement program — assign owners, cadence & goals", team: "Practice Head", type: "Internal Milestone", kpi: "Owners assigned / plan locked", owner: "Stephen", department: "Practice", status: "done" },
+        { day: "Tue", date: "Jun 23", activity: "Review commercetools Autonomous Commerce (MosAIc) reference architecture", team: "Practice", type: "Internal Milestone", kpi: "Architecture reviewed", owner: "Stephen", department: "Practice", status: "prog" },
+        { day: "Wed", date: "Jun 24", activity: "Draft Royal Cyber Autonomous Commerce implementation blueprint", team: "Senior Architect", type: "Whitepaper", kpi: "Reference architecture drafted", owner: "Stephen", department: "Practice", status: "prog" },
         { day: "Thu", date: "Jun 25", activity: "AgenticLift architecture workshop: catalog, pricing, inventory, cart, order & CS context", team: "Practice", type: "Meeting", kpi: "Workshop completed", owner: "Stephen", department: "Practice", status: "todo" },
         { day: "Fri", date: "Jun 26", activity: "Publish AgenticLift POV + use-case map", team: "Senior Architect", type: "Internal Milestone", kpi: "POV + use-case map published", owner: "Stephen", department: "Practice", status: "todo" },
         { day: "Fri", date: "Jun 26", activity: "Define platform-agnostic Customer Service accelerator scope & adapter architecture", team: "Practice", type: "Internal Milestone", kpi: "CS accelerator scope & architecture defined", owner: "Stephen", department: "Practice", status: "todo" },
