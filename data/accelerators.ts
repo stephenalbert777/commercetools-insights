@@ -56,9 +56,9 @@ export interface AcceleratorsData {
 export const accelerators: AcceleratorsData = {
   org: "Royal Cyber",
   title: "Royal Cyber Accelerators",
-  heading: "Three Accelerators, Built for Customer Value",
+  heading: "Four Accelerators, Built for Customer Value",
   intro:
-    "Each accelerator extends commercetools with applied AI, analytics and automation — and answers a real customer pain. Built and proven by the Royal Cyber commercetools Center of Excellence, they shorten time-to-value across customer service, platform migration and digital experience.",
+    "Each accelerator extends commercetools with applied AI, analytics and automation — and answers a real customer pain. Built and proven by the Royal Cyber commercetools Center of Excellence, they shorten time-to-value across customer service, platform migration, digital experience and B2B quoting.",
   generated: "Jun 23, 2026",
   items: [
     {
@@ -214,6 +214,56 @@ export const accelerators: AcceleratorsData = {
         "Positions commercetools as the commerce backbone behind Optimizely-powered experiences — opening the large Optimizely DXP install base and reinforcing composable best-of-breed.",
       valueRoyalCyber:
         "A pre-built connector plus integration engagements across two platforms Royal Cyber knows deeply — with recurring content-ops, experimentation enablement and managed-services revenue.",
+    },
+    {
+      n: "04",
+      slug: "ai-native-cpq-accelerator",
+      name: "AI-Native CPQ Accelerator",
+      category: "B2B Commerce · Configure-Price-Quote · AI Guided Selling",
+      tagline: "AI-native CPQ on commercetools' B2B quote primitives — an intelligence layer, not a standalone rebuild",
+      maturity: "Proposed",
+      customerValue: "Turn RFQs into accurate, approved quotes faster — ~28% shorter sales cycles and ~49% more quotes per rep.",
+      overview:
+        "An AI-native, commerce-native CPQ (Configure, Price, Quote) accelerator built on commercetools' existing B2B quote primitives — quotes, quote requests, staged quotes, quote states, business units and customer-specific pricing — adding the intelligence and orchestration layer that commercetools' own integration guidance leaves to partners. It does the three jobs that are newly possible and not commoditized: RFQ-to-quote ingestion that turns an unstructured email, spreadsheet or PDF into a structured, configured, priced quote; conversational guided selling that resolves natural language into a valid configuration with real-time compatibility validation; and a deal-desk copilot that recommends the price that wins while protecting margin — all with guardrails, approval routing and a full audit trail. It is deliberately scoped to medium-complexity configuration (bundles, tiered options, compatibility rules, customer-specific pricing) and integrates a specialist tool for deep nested BOM rather than rebuilding one — the scoping decision that keeps it deliverable, differentiated, and aimed squarely at the live wave of enterprises migrating off legacy CPQ.",
+      benefits: [
+        { title: "RFQ-to-quote in minutes", text: "AI turns an unstructured request — email, spreadsheet or PDF — into a structured, configured, priced commercetools quote, riding the rails of the B2B Intake Agent direction." },
+        { title: "Conversational guided selling", text: "Natural-language configuration resolves to a valid product or bundle with real-time compatibility validation, so reps quote correctly without spreadsheets." },
+        { title: "Deal-desk copilot", text: "AI discount and margin guidance recommends the price that wins while protecting margin — with full guardrails, approval routing and audit trail." },
+        { title: "Commerce-native, not bolted on", text: "Pricing and configuration logic stay unified on commercetools quote primitives, keeping the AI ceiling high instead of fragmenting logic across systems." },
+        { title: "Faster cycles, more quotes", text: "Directly attributable impact — roughly 28% shorter sales cycles and ~49% more quotes per rep, plus deals that used to die in email chains." },
+        { title: "Proof of impact built in", text: "Quote-cycle time, quotes per rep, margin and win-rate instrumentation ship in v1 as a first-class feature, so ROI is measurable from day one." },
+      ],
+      technical: [
+        "Built on commercetools native B2B: Quotes, Quote Requests, Staged Quotes, quote states, Business Units and customer-specific pricing",
+        "RFQ-to-quote ingestion — unstructured email / spreadsheet / PDF parsed into a structured, configured, priced quote or cart",
+        "Conversational guided selling with real-time compatibility-rule validation for medium-complexity bundles and tiered options",
+        "Deal-desk copilot — AI discount / margin guidance with guardrails, approval routing on commercetools quote states and a full audit trail",
+        "Quote document generation, customer-group / tiered / contract pricing, and a clean ERP / CRM handoff (pricing sync + order handoff)",
+        "Proof-of-impact instrumentation: quote-cycle time, quotes per rep, margin and win-rate metrics as a first-class capability",
+      ],
+      challenge: {
+        title: "Legacy CPQ is forcing a forward-path decision",
+        text: "Salesforce CPQ went End-of-Sale in March 2025 and Conga absorbed PROS's B2B business in February 2026, so thousands of enterprises must re-choose CPQ now — while fragmented, standalone configuration and pricing logic caps how much AI they can layer on later.",
+      },
+      resolves: [
+        "An AI-native orchestration layer on commercetools quote primitives replaces standalone CPQ without a heavy rebuild.",
+        "Unified, commerce-native pricing and configuration logic keeps the door open to agentic automation later.",
+        "A hard scope boundary at medium complexity — with specialist tools for deep BOM — keeps delivery predictable.",
+        "Governance-first design (guardrails, approval workflows, audit trail) makes a CFO comfortable letting AI touch prices.",
+      ],
+      idealCustomer:
+        "B2B enterprises on or moving to commercetools that quote configured or tiered products — especially the large installed base forced off legacy CPQ (Salesforce CPQ End-of-Sale, the Conga / PROS consolidation) and needing a commerce-native, AI-ready forward path rather than another standalone tool.",
+      signals: [
+        "On legacy CPQ (Salesforce, Oracle, SAP, Conga) facing a forced migration",
+        "B2B quoting of bundles, tiered options or customer-specific pricing",
+        "Quotes still run on spreadsheets and pricing email chains",
+        "Margin leakage or slow deal-desk approvals",
+        "Already on commercetools B2B (quotes, business units) or adopting it",
+      ],
+      valueCommercetools:
+        "Fills the orchestration and intelligence layer that commercetools' own B2B guidance hands to partners — deepening use of quote primitives and the B2B Intake Agent direction, and converting legacy-CPQ migrations into net-new commercetools B2B wins.",
+      valueRoyalCyber:
+        "A higher-margin, repeatable B2B accelerator that shortens delivery, lifts win rates in commercetools pursuits and opens immediate pipeline from the legacy-CPQ migration wave — a strong certification and co-sell candidate that complements Metafy (AEO/GEO) in the COE.",
     },
   ],
 };
