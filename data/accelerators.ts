@@ -112,7 +112,7 @@ export const accelerators: AcceleratorsData = {
       name: "SmartMigrate — Migration Accelerator",
       category: "Platform Migration · Any-to-Any Commerce",
       tagline: "Any commerce platform onto commercetools — guided, mapped and self-correcting",
-      maturity: "Production-ready",
+      maturity: "In progress",
       customerValue: "Replatform in weeks, not months — and fix messy data inline instead of restarting.",
       overview:
         "A guided migration accelerator that moves any commerce platform — Shopify, Magento, SAP Commerce, Salesforce, Adobe, VTEX, a bespoke API or a plain CSV export — onto commercetools through one repeatable five-step flow. SmartMigrate normalizes every source and target into a common commerce model, so the same wizard handles any pairing: connect both stores with encrypted, read-only credentials, auto-detect what to move (products, variants, customers, orders, catalog, content and media), auto-map fields between schemas, then run. Crucially, bad data never stalls a cutover — unmapped fields and failing records surface as fixable errors that teams correct inline or in bulk and re-run on their own, turning a high-risk, months-long replatforming project into a controlled, observable migration measured in weeks.",
