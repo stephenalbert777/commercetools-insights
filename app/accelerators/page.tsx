@@ -52,20 +52,31 @@ function AcceleratorBlock({ a }: { a: Accelerator }) {
             </div>
           </div>
 
-          {a.video && (
-            <div className="w-full lg:w-[380px] lg:flex-none">
-              <div className="aspect-video w-full overflow-hidden rounded-xl border border-opti-line bg-black shadow-sm">
-                <iframe
-                  src={a.video}
-                  title={`${a.name} — video`}
-                  className="h-full w-full"
-                  allow="encrypted-media; fullscreen;"
-                  allowFullScreen
-                />
-              </div>
-              <p className="mt-1.5 text-center text-[11px] font-semibold uppercase tracking-wide text-opti-teal">
-                {a.name} — see it in action
-              </p>
+          {a.videos && a.videos.length > 0 && (
+            <div className="w-full space-y-4 lg:w-[380px] lg:flex-none">
+              {a.videos.map((v, i) => (
+                <div key={i}>
+                  <div className="aspect-video w-full overflow-hidden rounded-xl border border-opti-line bg-black shadow-sm">
+                    {v.embed ? (
+                      <iframe
+                        src={v.src}
+                        title={v.title}
+                        className="h-full w-full"
+                        allow="encrypted-media; fullscreen;"
+                        allowFullScreen
+                      />
+                    ) : (
+                      <video controls preload="metadata" className="h-full w-full">
+                        <source src={v.src} type="video/mp4" />
+                        Your browser does not support the video tag.
+                      </video>
+                    )}
+                  </div>
+                  <p className="mt-1.5 text-center text-[11px] font-semibold uppercase tracking-wide text-opti-teal">
+                    {v.title}
+                  </p>
+                </div>
+              ))}
             </div>
           )}
         </div>

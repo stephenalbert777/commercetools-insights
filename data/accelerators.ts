@@ -18,6 +18,12 @@ export interface AccelChallenge {
   text: string;
 }
 
+export interface AccelVideo {
+  title: string;        // caption shown under the player
+  src: string;          // embed URL (iframe) or a direct video file URL (.mp4)
+  embed?: boolean;      // true → iframe embed (e.g. HeyGen); otherwise rendered as an <video> file
+}
+
 export interface Accelerator {
   n: string;            // "01"
   slug: string;         // anchor id, e.g. "commercetools-mcp-server"
@@ -25,7 +31,7 @@ export interface Accelerator {
   category: string;     // "B2B Commerce · Conversational AI"
   tagline: string;      // one-line positioning
   maturity: string;     // "Live pilot" | "In production" | "Production-ready"
-  video?: string;       // optional showcase video — embed URL (e.g. HeyGen) rendered in an iframe
+  videos?: AccelVideo[]; // optional showcase videos rendered, in order, beside the block
   customerValue: string;// headline customer outcome
   overview: string;     // longer description
   benefits: AccelBenefit[];
@@ -62,7 +68,10 @@ export const accelerators: AcceleratorsData = {
       category: "Customer Service · AI Agents · Multi-Tenant SaaS",
       tagline: "AI-assisted B2C & B2B service desks, live per client in days",
       maturity: "Production-ready",
-      video: "https://app.heygen.com/embeds/2633de80446b435ebc7a820ad3dea918",
+      videos: [
+        { title: "CSA Transformation", src: "https://app.heygen.com/embeds/2633de80446b435ebc7a820ad3dea918", embed: true },
+        { title: "CSA Demo - Enhanced 2026", src: "https://storage.googleapis.com/csa-standalone-bucket/CSA-Enhanced-Demo.mp4" },
+      ],
       customerValue: "More cases resolved per agent, with each client's desk live in days.",
       overview:
         "A multi-tenant SaaS Customer Service Accelerator that runs AI-assisted B2C and B2B service desks for many client organisations from one platform. New clients are onboarded from a superadmin control plane that registers their commercetools projects and bootstraps their admins, so a fully isolated, branded service desk goes live in days instead of a multi-month build. Each tenant connects to its own commercetools project with encrypted credentials and signs in through its existing identity provider, while a single codebase serves both consumer and business support — turning customer service from a slow, costly build into a fast-to-deploy, AI-driven way to protect revenue and loyalty.",
