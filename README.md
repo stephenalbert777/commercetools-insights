@@ -6,8 +6,9 @@ commercetools agents in one commercetools-branded site:
 - **Trend Report** (`/newsletter`) — the **commercetools Department Agent** weekly sweep:
   emerging trends, release updates, upcoming events, and blog / whitepaper /
   LinkedIn content opportunities.
-- **Weekly Plan** (`/weekly-plan`) — the **commercetools Weekly Plan Agent**:
-  a six-week execution plan with team focus areas and day-by-day tasks.
+- **Quarterly Plan** (`/quarterly-plan`) — the **commercetools Quarterly Plan Agent**:
+  a two-quarter execution plan (Q3 / Q4) with strategic focus areas and a
+  month-sorted initiative table. (`/weekly-plan` redirects here.)
 - **Accelerators** (`/accelerators`) — the Royal Cyber commercetools Center of Excellence catalogue.
 - **Projects** (`/projects`) — live commercetools engagement teams.
 - **Dashboard** (`/`) — landing page linking to everything.
@@ -30,7 +31,7 @@ npm run build    # production build
 All agent output lives in plain data files — no component edits needed:
 
 - `data/report.ts` — Department Agent trend report.
-- `data/weeklyPlan.ts` — Weekly Plan agent output.
+- `data/quarterlyPlan.ts` — Quarterly Plan agent output.
 - `data/accelerators.ts` — accelerator catalogue.
 - `data/projects.ts` — project teams.
 

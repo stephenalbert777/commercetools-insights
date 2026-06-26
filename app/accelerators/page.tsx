@@ -46,9 +46,11 @@ function AcceleratorBlock({ a }: { a: Accelerator }) {
             <p className="mt-4 max-w-3xl text-[14px] leading-relaxed text-opti-muted">
               {a.overview}
             </p>
-            <div className="mt-4 inline-flex items-center gap-2 rounded-lg border border-opti-line bg-white px-3 py-2 text-[13px]">
+            <div className="mt-4 flex max-w-full flex-wrap items-baseline gap-x-2 gap-y-1 rounded-lg border border-opti-line bg-white px-3 py-2 text-[13px]">
               <span className="font-semibold text-opti-teal">Customer value</span>
-              <span className="text-opti-ink">{a.customerValue}</span>
+              <span className="min-w-0 break-words text-opti-ink">
+                {a.customerValue}
+              </span>
             </div>
           </div>
 

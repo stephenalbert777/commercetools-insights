@@ -6,7 +6,7 @@ import SiteFooter from "@/components/SiteFooter";
 export const metadata: Metadata = {
   title: "Royal Cyber — commercetools Insights",
   description:
-    "commercetools Insights dashboard by Royal Cyber. Trend & content opportunities from the Department Agent and the rolling Weekly Plan.",
+    "commercetools Insights dashboard by Royal Cyber. Trend & content opportunities from the Department Agent and the rolling Quarterly Plan.",
 };
 
 export default function RootLayout({

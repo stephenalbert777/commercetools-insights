@@ -65,25 +65,29 @@ The whole card scales up ~2% and lifts with a deeper shadow on hover.
 
 ## 6. Pages
 
-- Home (`app/page.tsx`), Weekly Plan (`app/weekly-plan` + `components/WeeklyPlanTabs.tsx`)
-  and Newsletter (`app/newsletter/page.tsx`) are all **light**.
+- Home (`app/page.tsx`), Quarterly Plan (`app/quarterly-plan` + `components/QuarterlyPlanTabs.tsx`)
+  and Newsletter (`app/newsletter/page.tsx`) are all **light**. (`/weekly-plan` now
+  permanently redirects to `/quarterly-plan`.)
 - The newsletter / accelerators / projects background is `bg-gradient-to-b from-[#f1eefc] to-white`.
 - Body background `#f5f3fc`, text `#171432` (`app/globals.css`).
 
 ## 7. Editing rules (important)
 
 - After any change, verify with a clean `next build` before pushing.
-- The weekly auto-deploy regenerates ONLY `data/report.ts` and `data/weeklyPlan.ts`.
+- The auto-deploy regenerates ONLY `data/report.ts` and `data/quarterlyPlan.ts`.
   It must never modify the theme files (tailwind.config.ts, components, page layouts,
   globals.css). Data and theme are decoupled, so the theme persists automatically.
 
 ## 8. Behaviours to preserve
 
-- **`/weekly-plan` opens on the current week of the month.**
-  `components/WeeklyPlanTabs.tsx` reads each week's start date from its `subtitle`
-  (e.g. "Jun 22 – Jun 26, 2026  |  …") and, once mounted in the browser, selects the
-  latest week whose start date is on or before today — so Jun 22 lands on **Week 4**.
-  It falls back to Week 1 before the plan starts and to the last week after it ends.
-  The choice is derived at view time from the subtitle dates, so it keeps working
-  after every weekly data regeneration. Do **not** hard-code a default week or remove
-  this logic; the weekly deploy agent must never overwrite this component.
+- **`/quarterly-plan` opens on the current quarter.**
+  `components/QuarterlyPlanTabs.tsx` reads each quarter's first month from its
+  `subtitle` (e.g. "Jul – Sep 2026  |  …") and, once mounted in the browser, selects
+  the latest quarter whose start month is on or before today. It falls back to the
+  first quarter before the plan starts and to the last quarter after it ends. The
+  choice is derived at view time from the subtitle, so it keeps working after every
+  data regeneration. Do **not** hard-code a default quarter or remove this logic; the
+  deploy agent must never overwrite this component.
+- The plan has exactly **two tabs (Q3, Q4)** and a **month-sorted initiative table**
+  (Month · Initiative · Track · Owner · Department · Goal · Status). There is no RACI
+  tab and no week sub-tabs.
