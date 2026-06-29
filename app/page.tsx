@@ -129,7 +129,7 @@ export default function HomePage() {
                   benefits
                 </span>
                 <span>
-                  <b className="text-opti-ink">4</b> platform areas
+                  <b className="text-opti-ink">5</b> platform areas
                 </span>
               </div>
             </div>

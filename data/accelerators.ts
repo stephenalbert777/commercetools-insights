@@ -56,7 +56,7 @@ export interface AcceleratorsData {
 export const accelerators: AcceleratorsData = {
   org: "Royal Cyber",
   title: "Royal Cyber Accelerators",
-  heading: "Four Accelerators, Built for Customer Value",
+  heading: "Five Accelerators, Built for Customer Value",
   intro:
     "Each accelerator extends commercetools with applied AI, analytics and automation — and answers a real customer pain. Built and proven by the Royal Cyber commercetools Center of Excellence, they shorten time-to-value across customer service, platform migration, digital experience and B2B quoting.",
   generated: "Jun 23, 2026",
@@ -115,8 +115,64 @@ export const accelerators: AcceleratorsData = {
       valueRoyalCyber:
         "A repeatable multi-tenant SaaS offering: per-client onboarding and configuration plus recurring managed-service and AI-tuning revenue across every tenant.",
     },
+    // -----------------------------------------------------------------------
+    // PLACEHOLDER DRAFT — Metafy (AEO/GEO). Authored ONLY from the high-level
+    // "AEO/GEO, top-of-funnel discovery" framing in the CPQ approval doc.
+    // The tagline, maturity, benefits, technical points, signals and value
+    // props below are ASSUMPTIONS — replace with real Metafy product details.
+    // -----------------------------------------------------------------------
     {
       n: "02",
+      slug: "metafy-aeo-geo",
+      name: "Metafy — AEO/GEO Accelerator",
+      category: "Digital Discovery · Answer Engine & Generative Engine Optimization",
+      tagline: "Get commercetools catalogs surfaced and cited in AI answers and generative search",
+      maturity: "Production-ready",
+      customerValue: "Win top-of-funnel discovery where buyers now start — inside AI answers and generative search, not just classic SEO.",
+      overview:
+        "Metafy is Royal Cyber's AEO/GEO accelerator — Answer Engine Optimization and Generative Engine Optimization for top-of-funnel discovery. As shoppers increasingly start in AI assistants and generative search (ChatGPT, Gemini, Perplexity, Google AI Overviews) instead of a list of blue links, Metafy makes a brand's commercetools catalog and content answer-ready: it structures and enriches product, category and brand data into machine-readable, citable content, and monitors how — and whether — the brand shows up in AI-generated answers. The result is presence and citations in the channels that classic SEO misses, fed directly from commercetools as the source of truth.",
+      benefits: [
+        { title: "Be found in AI answers", text: "Optimizes catalog and brand content so products surface and get cited in AI assistants and generative search, not just traditional results." },
+        { title: "Answer-ready product content", text: "Turns commercetools product and category data into structured, machine-readable content that answer engines can parse and quote." },
+        { title: "See your AI visibility", text: "Monitors how the brand appears across AI answer engines and tracks citations, mentions and share of voice over time." },
+        { title: "Commerce-native, always current", text: "Feeds from commercetools as the source of truth, so AI-facing content stays in sync with live catalog, pricing and availability." },
+        { title: "Close discovery gaps", text: "Surfaces the questions and topics where the brand is absent from AI answers, prioritizing the content that wins discovery." },
+        { title: "Complements existing SEO", text: "Extends — rather than replaces — current search investment, adding the AEO/GEO layer competitors are only starting to build." },
+      ],
+      technical: [
+        "Pulls product, variant, category and brand data from commercetools via Product Search & APIs",
+        "Generates structured data / schema.org markup and answer-ready content feeds from the catalog",
+        "Entity and topic optimization tuned for LLM answer engines and generative search surfaces",
+        "AI-answer visibility tracking across assistants (e.g. ChatGPT, Gemini, Perplexity, AI Overviews)",
+        "Integrates with the storefront / CMS to publish optimized, machine-readable content",
+        "Analytics on citations, mentions, share of voice and discovery-gap topics",
+      ],
+      challenge: {
+        title: "Discovery is moving from search results to AI answers",
+        text: "Buyers increasingly start in AI assistants and generative search that synthesize one answer and cite a few sources. Brands whose content is not answer-ready become invisible at the very top of the funnel — a gap classic SEO does not close.",
+      },
+      resolves: [
+        "Structures commercetools catalog and content into answer-ready, citable form for AI engines.",
+        "Monitors AI-answer visibility so the brand can see where it is present or missing.",
+        "Prioritizes the content gaps that most affect discovery and citations.",
+        "Stays commerce-native — fed from commercetools, so AI-facing content never goes stale.",
+      ],
+      idealCustomer:
+        "Brands on or adopting commercetools that depend on organic discovery and want presence in AI assistants and generative search — especially those seeing SEO plateau while AI-driven traffic grows.",
+      signals: [
+        "Rising referral traffic from AI assistants / generative search",
+        "Classic SEO plateauing or declining",
+        "Large, rich product catalog suited to discovery",
+        "Wants to be cited by LLMs and AI answer engines",
+        "commercetools in place or being adopted as catalog source of truth",
+      ],
+      valueCommercetools:
+        "Positions the commercetools catalog as the source of truth feeding the new AI discovery channels — deepening platform usage and extending its reach into generative search.",
+      valueRoyalCyber:
+        "A repeatable AEO/GEO offering with recurring visibility-monitoring and content-optimization revenue — the top-of-funnel discovery complement to the CSA and AI-Native CPQ accelerators in the COE.",
+    },
+    {
+      n: "03",
       slug: "smartmigrate-migration-accelerator",
       name: "SmartMigrate — Migration Accelerator",
       category: "Platform Migration · Any-to-Any Commerce",
@@ -166,7 +222,7 @@ export const accelerators: AcceleratorsData = {
         "A repeatable, tool-led migration practice: fixed-scope cutover engagements from any source, plus follow-on data, enrichment and managed-services work.",
     },
     {
-      n: "03",
+      n: "04",
       slug: "optimizely-connect",
       name: "Optimizely Connect",
       category: "Digital Experience · Content, Experimentation & Personalization",
@@ -216,7 +272,7 @@ export const accelerators: AcceleratorsData = {
         "A pre-built connector plus integration engagements across two platforms Royal Cyber knows deeply — with recurring content-ops, experimentation enablement and managed-services revenue.",
     },
     {
-      n: "04",
+      n: "05",
       slug: "ai-native-cpq-accelerator",
       name: "AI-Native CPQ Accelerator",
       category: "B2B Commerce · Configure-Price-Quote · AI Guided Selling",
