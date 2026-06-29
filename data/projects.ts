@@ -118,5 +118,65 @@ export const projectsData: ProjectsData = {
       ],
       members: [],
     },
+    {
+      id: "sportsmans-guide",
+      name: "Sportsman's Guide",
+      status: "past",
+      industry: "Retail · Outdoor & Sporting Goods",
+      summary:
+        "Built an embedded Customer Service Accelerator inside commercetools for this Minnesota-based hunting, fishing, military-surplus and outdoor-goods retailer — a single responsive interface for timely query resolution and personalized, data-driven support.",
+      highlights: [
+        "360-degree customer view with cart & order management",
+        "Shipment handling and ticketing system in one interface",
+        "Empowered CS agents for prompt, effective query resolution",
+        "Third-party integration for a flexible, evolving CS approach",
+      ],
+      members: [],
+    },
+    {
+      id: "dr-reddys-allverz",
+      name: "Dr. Reddy's — Allverz",
+      status: "past",
+      industry: "Pharmaceuticals · B2B Marketplace",
+      summary:
+        "Built Allverz, a first-of-its-kind marketplace for buying and selling pharmaceutical chemicals and active ingredients, for Dr. Reddy's Laboratories — letting multiple vendors sell and diverse buyers discover and procure on a headless commercetools foundation, automating a previously manual internal procurement journey.",
+      highlights: [
+        "Multi-vendor pharma marketplace with buyer product discovery",
+        "Intuitive CX on Frontastic + Contentful over headless commercetools",
+        "Product search & custom price filters in storefront via Algolia",
+        "End-to-end order management integrated with SAP ERP (reference PO)",
+      ],
+      members: [],
+    },
+    {
+      id: "nerivio",
+      name: "Nerivio (Dr. Reddy's)",
+      status: "past",
+      industry: "Pharmaceuticals · D2C HealthTech",
+      summary:
+        "Built a D2C ecommerce experience for Dr. Reddy's Nerivio migraine-therapy wearable — a single-product, multi-language international storefront (Europe) with a prescription-upload and doctor-approval purchase flow and fast, integrated checkout.",
+      highlights: [
+        "Single-product D2C site with multi-language support for Europe",
+        "Prescription upload with doctor-approval, one-click buying flow",
+        "Faster, smoother checkout with payment integrations",
+        "Headless commercetools + Contentful for marketing agility",
+      ],
+      members: [],
+    },
+    {
+      id: "gwa-group",
+      name: "GWA Group",
+      status: "past",
+      industry: "Manufacturing · Building Fixtures (B2B & D2C)",
+      summary:
+        "Delivered a composable commerce solution for GWA Group's market-leading bathroom & kitchen brands (Caroma, Methven, Dorf, Clark) — multi-brand consumer sites plus a B2B trade platform for merchants, plumbers and architects across countries, with a knowledge hub and marketing analytics.",
+      highlights: [
+        "Multi-brand consumer sites + B2B trade on commercetools Frontend & commerce",
+        "Complex product modeling with PIM sync from inRiver; Algolia search",
+        "B2B account registration, team onboarding & workflow; Microsoft Dynamics integration",
+        "Live inventory, merchant-specific pricing & multi-carrier order tracking",
+      ],
+      members: [],
+    },
   ],
 };
